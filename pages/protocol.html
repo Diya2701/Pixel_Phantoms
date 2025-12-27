@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Pixel Phantoms | System Protocol V2</title>
+    <title>Pixel Phantoms | System Protocol V3</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/protocol.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="dark-theme hud-mode">
@@ -16,39 +14,91 @@
     <main class="protocol-page-root">
         <div class="protocol-wrapper">
             <header class="protocol-header">
-                <h1 class="glitch-title" data-text="SYSTEM_PROTOCOL_V2">SYSTEM_PROTOCOL_V2</h1>
-                <p class="status-text"><span class="pulse"></span> CORE_LOGIC_ACTIVE</p>
+                <h1 class="glitch-title" data-text="SYSTEM_PROTOCOL_V3">SYSTEM_PROTOCOL_V3</h1>
+                <div class="status-indicator">
+                    <span class="pulse"></span> 
+                    <span class="status-text">CANDIDATE_RULEBOOK_STANDARDIZED</span>
+                </div>
             </header>
 
             <div class="bento-container">
                 <section class="protocol-box blue-bone">
-                    <h3><i class="fas fa-microchip"></i> DOMINATION_METRIC</h3>
-                    <p>Scoring weighted by MCS logic: L3 (1100 XP), L2 (500 XP), L1 (200 XP).</p>
+                    <div class="box-header">
+                        <i class="fas fa-microchip"></i>
+                        <h3>DOMINATION_METRIC (MCS)</h3>
+                    </div>
+                    <div class="box-content">
+                        <p>The Multidimensional Contribution Score (MCS) ensures that complex engineering is rewarded over simple commits.</p>
+                        <ul class="detail-list">
+                            <li><strong>Level 3 (Architect):</strong> 1100 XP - Major core features, security patches, or infrastructure.</li>
+                            <li><strong>Level 2 (Specialist):</strong> 500 XP - Significant bug fixes, UI improvements, or module development.</li>
+                            <li><strong>Level 1 (Scout):</strong> 200 XP - Documentation, minor CSS fixes, or README updates.</li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section class="protocol-box purple-bone">
-                    <h3><i class="fas fa-shield-alt"></i> SECURITY_ENFORCEMENT</h3>
-                    <p>Mandatory Git-hook compliance and automated security scans for all candidates.</p>
+                    <div class="box-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>SECURITY_ENFORCEMENT</h3>
+                    </div>
+                    <div class="box-content">
+                        <p>To maintain codebase integrity, all candidates must adhere to automated protection protocols.</p>
+                        <ul class="detail-list">
+                            <li><strong>Linting:</strong> Every Pull Request must pass ESLint/Prettier checks automatically.</li>
+                            <li><strong>Security:</strong> Secrets or API keys detected in commits lead to immediate disqualification.</li>
+                            <li><strong>Review:</strong> 2-peer approval is mandatory before any "Elite" class PR is merged.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="protocol-box green-bone">
+                    <div class="box-header">
+                        <i class="fas fa-user-check"></i>
+                        <h3>CANDIDATE_ELIGIBILITY</h3>
+                    </div>
+                    <div class="box-content">
+                        <p>Participation is open to all students, but advancement requires verified skills.</p>
+                        <ul class="detail-list">
+                            <li><strong>Titan Class:</strong> Requires 15,000+ XP and 5 successfully merged L3 PRs.</li>
+                            <li><strong>Striker Class:</strong> Requires 5,000+ XP and active community mentoring.</li>
+                            <li><strong>Rookie:</strong> Initial entry level for all new registered GitHub handles.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="protocol-box gold-bone">
+                    <div class="box-header">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <h3>EVENT_TRANSPARENCY</h3>
+                    </div>
+                    <div class="box-content">
+                        <p>We value real-world presence as much as code. Our attendance tracking is verified via cryptographic proof.</p>
+                        <ul class="detail-list">
+                            <li><strong>Standard Reward:</strong> 250 XP for every verified campus session.</li>
+                            <li><strong>Bonus Impact:</strong> Hosting an event grants an automatic 1.5x multiplier to your next PR.</li>
+                        </ul>
+                    </div>
                 </section>
             </div>
 
             <div class="rules-section">
                 <div class="glowing-rule-card">
-                    <p><strong>GUIDELINE:</strong> Standardized 250 XP reward for verified attendance.</p>
+                    <h3>OFFICIAL_DECLARATION</h3>
+                    <p>Transparency is the core of Pixel Phantoms. All leaderboard calculations are visible in the <code>leaderboard-enhanced.js</code> logic. Candidates are encouraged to strategize based on weighted coefficients to maximize their ranking impact.</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <div id="navbar-placeholder"></div>
+    <div id="footer-placeholder"></div>
     
     <script src="../js/navbar.js"></script>
-    <script>renderNavbar('../');</script>
     <script src="../js/footer.js"></script>
-    <script>renderFooter('../');</script>
     <script src="../js/theme.js"></script>
-    <script src="../js/protocol.js"></script>
-    <script src="../js/scroll-progress.js"></script>
-    <script src="../js/hud-mode.js"></script>
+    <script>
+        renderNavbar('../');
+        renderFooter('../');
+    </script>
 </body>
 </html>
