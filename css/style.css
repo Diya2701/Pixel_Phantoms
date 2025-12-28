@@ -846,8 +846,14 @@ body.mobile-menu-open {
 }
 
 .feature-card:hover {
-    transform: translateY(-10px); /* Hover float effect */
+    transform: translateY(-10px);
     border-color: var(--accent-color);
+}
+
+/* HACKATHON LAYOUT */
+.hackathon-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .feature-icon {
